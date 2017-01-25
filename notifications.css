@@ -1,0 +1,77 @@
+/* Notifications */
+
+.box{
+  float:right;
+}
+
+.notification {
+    display: block;
+    position: relative;
+    padding: 15px 15px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 250px;
+    border-radius: 0px;
+    box-shadow:5px 5px 10px rgba(0,0,0,.3);
+    color: #ffffff;
+    -webkit-animation: show-notification 3s ease-out;
+    animation: show-notification 3s ease-out;
+}
+
+.notification-success {
+  background:#5cb85c;
+}
+
+.notification-error {
+    background-color: #e85656;
+}
+
+.notification-info {
+    background-color: #5bc0de;
+}
+
+.notification-warning {
+    background-color: #f0ad4e;
+}
+
+@-webkit-keyframes show-notification {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0, -100%);
+    }
+    10% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+    90% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate(0, 0);
+    }
+}
+
+@keyframes show-notification {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0, -100%);
+        transform: translate(0, -100%);
+    }
+    10% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    90% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
